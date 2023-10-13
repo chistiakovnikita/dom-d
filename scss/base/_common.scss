@@ -1,0 +1,21 @@
+@import './variables';
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    color: $black;
+}
+
+.text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+}

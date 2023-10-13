@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@import './base/reset';
+@import './base/normalize';
+@import './base/common';
+@import './base/variables';
+@import './components/header';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $white;
+}

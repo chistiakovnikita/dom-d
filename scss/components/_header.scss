@@ -1,0 +1,234 @@
+.header {
+    background-color: $black;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    &__guarantee {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 15px;
+
+        span {
+            font-size: 18px;
+            span {
+                color: $main;
+            }
+        }
+    }
+
+    &__socials-text {
+        font-family: Roboto;
+        font-size: 14px;
+        color: $main;
+        text-align: center;
+        margin-bottom: 13px;
+        line-height: 16.41px;
+    }
+
+    &__socials-viber {
+        position: relative;
+        width: 140px;
+        height: 46px;
+        color: $white;
+        background: rgba(255, 255, 255, 0.22);
+        padding-left: 10px;
+        transition: filter 0.3s linear;
+
+        &:hover {
+            filter: $hover;
+        }
+
+        &:before {
+            content: url(../../img/header/viber.svg);
+            position: absolute;
+            left: 15px;
+            top: 6px;
+        }
+    }
+
+    &__socials-telegram {
+        position: relative;
+        width: 140px;
+        height: 46px;
+        color: $white;
+        background: rgba(255, 255, 255, 0.22);
+        padding-left: 37px;
+        transition: filter 0.3s linear;
+
+        &:hover {
+            filter: $hover;
+        }
+
+        &:before {
+            content: url(../../img/header/telegram.svg);
+            position: absolute;
+            left: 15px;
+            top: 6px;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8.35px;
+    }
+
+    &__phone-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__phone-number {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 700;
+        color: $white;
+        line-height: 21px;
+        transition: filter 0.3s linear;
+
+        &:hover {
+            filter: $hover;
+        }
+    }
+
+    &__phone-btn {
+        width: 200px;
+        height: 46px;
+        font-size: 16px;
+        background: linear-gradient(
+            180deg,
+            #ffdc83 0%,
+            #fbd26a 25%,
+            #c17024 84.9%,
+            #e3a548 100%
+        );
+        color: $black;
+        transition: filter 0.3s linear;
+
+        &:hover {
+            filter: $hover;
+        }
+    }
+
+    &__content {
+        background-image: url(../../img/header/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 90px;
+    }
+
+    &__content-inner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__subtitle {
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+
+    &__services {
+        max-width: 593px;
+    }
+
+    &__title {
+        font-family: Roboto;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 60px;
+
+        span {
+            color: $main;
+        }
+
+        .small {
+            font-family: Roboto;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 49px;
+            color: $white;
+        }
+    }
+
+    &__services-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__service-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: $black;
+        width: 160px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.71);
+        max-width: 160px;
+        text-align: center;
+        cursor: pointer;
+        transition: background 0.3s linear;
+
+        &:hover {
+            background: $main;
+        }
+    }
+
+    &__calculation {
+        width: 100%;
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.71);
+        padding: 45px 29px;
+
+        img {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__calculation-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 15px;
+    }
+
+    &__calculation-subtitle {
+        font-size: 18px;
+        color: $black;
+        margin-bottom: 25px;
+    }
+
+    &__calculation-btn {
+        width: 200px;
+        height: 46px;
+        background: linear-gradient(
+            180deg,
+            #ffdc83 0%,
+            #fbd26a 25%,
+            #c17024 84.9%,
+            #e3a548 100%
+        );
+        transition: filter 0.3s linear;
+
+        &:hover {
+            filter: $hover;
+        }
+    }
+}
