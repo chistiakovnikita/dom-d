@@ -5,6 +5,9 @@
 @import './base/common';
 @import './base/variables';
 @import './components/header';
+@import './components/main/services';
+@import './components/main/calculation';
+@import './components/main/advantages';
 
 body {
     font-family: 'Roboto', sans-serif;

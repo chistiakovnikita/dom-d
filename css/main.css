@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -466,7 +467,6 @@ template {
 .title {
   font-family: Roboto;
   font-size: 48px;
-  font-weight: 700;
   color: rgb(0, 0, 0);
 }
 
@@ -580,6 +580,7 @@ template {
   background-size: cover;
   background-position: center;
   padding-bottom: 90px;
+  margin-bottom: 90px;
 }
 .header__content-inner {
   display: flex;
@@ -667,6 +668,134 @@ template {
 }
 .header__calculation-btn:hover {
   filter: brightness(80%);
+}
+
+.services__title {
+  text-align: center;
+  line-height: 56.25px;
+}
+.services__title span {
+  font-weight: 700;
+}
+.services__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 130px;
+  gap: 20px;
+}
+.services .services-card {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 125px 100px auto;
+  max-width: 340px;
+  box-shadow: 0px 0px 74px 0px rgba(39, 17, 10, 0.16);
+  background: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+}
+.services .services-card__title {
+  position: relative;
+  font-size: 28px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  padding: 44px 0 0px 32px;
+}
+.services .services-card__title::after {
+  content: "●";
+  font-size: 45px;
+  border-radius: 50%;
+  color: rgb(221, 160, 70);
+  position: absolute;
+  top: 0;
+  right: 7px;
+}
+.services .services-card__btn {
+  max-width: 200px;
+  height: 46px;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(180deg, #ffdc83 0%, #fbd26a 25%, #c17024 84.9%, #e3a548 100%);
+  font-size: 16px;
+  margin-left: 32px;
+}
+.services .services-card__btn:hover {
+  background: rgb(255, 255, 255);
+}
+.services .services-card__btn::after {
+  content: url(../../../img/services/arrow.svg);
+  margin-left: 22px;
+}
+.services .services-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.calculation__title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.calculation__subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 55px;
+  color: rgb(0, 0, 0);
+}
+.calculation .calculation-content {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background: rgb(29, 26, 20);
+  margin-bottom: 130px;
+  padding: 60px 90px 62px 90px;
+}
+.calculation .calculation-content:after {
+  position: absolute;
+  content: url(../../../img/calculation/image3.png);
+  top: 0;
+  right: 0;
+}
+.calculation .calculation-content__info {
+  max-width: 417px;
+}
+.calculation .calculation-content__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(221, 160, 70);
+  margin-bottom: 19px;
+  line-height: 50px;
+}
+.calculation .calculation-content__subtitle {
+  font-size: 24px;
+  margin-bottom: 81px;
+  line-height: 33px;
+}
+.calculation .calculation-content__btn {
+  max-width: 200px;
+  height: 46px;
+  background: linear-gradient(180deg, #ffdc83 0%, #fbd26a 25%, #c17024 84.9%, #e3a548 100%);
+  transition: filter 0.3s linear;
+}
+.calculation .calculation-content__btn:hover {
+  filter: brightness(80%);
+}
+.calculation .calculation-content__video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.calculation .calculation-content__play {
+  position: absolute;
+  cursor: pointer;
+}
+
+.advantages__title {
+  text-align: center;
+}
+.advantages__title span {
+  font-weight: 700;
 }
 
 body {

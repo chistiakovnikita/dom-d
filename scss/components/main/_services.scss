@@ -1,0 +1,75 @@
+.services {
+    &__title {
+        text-align: center;
+        line-height: 56.25px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 130px;
+        gap: 20px;
+    }
+
+    .services-card {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 125px 100px auto;
+        max-width: 340px;
+        box-shadow: 0px 0px 74px 0px rgba(39, 17, 10, 0.16);
+        background: rgba(255, 255, 255, 0.6);
+        margin-bottom: 30px;
+
+        &__title {
+            position: relative;
+            font-size: 28px;
+            font-weight: 900;
+            color: $black;
+            padding: 44px 0 0px 32px;
+
+            &::after {
+                content: '\25CF';
+                font-size: 45px;
+                border-radius: 50%;
+                color: $main;
+                position: absolute;
+                top: 0;
+                right: 7px;
+            }
+        }
+
+        &__btn {
+            max-width: 200px;
+            height: 46px;
+            color: $black;
+            background: linear-gradient(
+                180deg,
+                #ffdc83 0%,
+                #fbd26a 25%,
+                #c17024 84.9%,
+                #e3a548 100%
+            );
+            font-size: 16px;
+            margin-left: 32px;
+
+            &:hover {
+                background: $white;
+            }
+
+            &::after {
+                content: url(../../../img/services/arrow.svg);
+                margin-left: 22px;
+            }
+        }
+
+        &__img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
