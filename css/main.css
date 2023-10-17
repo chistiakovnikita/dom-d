@@ -489,7 +489,7 @@ template {
 .header__guarantee {
   font-family: Roboto;
   font-size: 14px;
-  line-height: 15px;
+  line-height: 20px;
 }
 .header__guarantee span {
   font-size: 18px;
@@ -793,8 +793,161 @@ template {
 
 .advantages__title {
   text-align: center;
+  margin-bottom: 81px;
 }
 .advantages__title span {
+  font-weight: 700;
+}
+.advantages__inner {
+  margin-bottom: 143px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 81px;
+  flex-wrap: wrap;
+}
+.advantages .advantages-card {
+  max-width: 340px;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+.advantages .advantages-card__icon {
+  padding: 13px 13px 14px 14px;
+  background: rgb(255, 255, 255);
+}
+.advantages .advantages-card__title {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 23px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+.advantages .advantages-card__subtitle {
+  max-width: 220px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgb(0, 0, 0);
+}
+
+.gallery__title {
+  text-align: center;
+  margin-bottom: 81px;
+  line-height: 56px;
+}
+.gallery__title span {
+  font-weight: 700;
+}
+.gallery__inner {
+  max-width: 1370px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 53px;
+}
+.gallery__img {
+  width: 100%;
+  height: auto;
+}
+.gallery__btn {
+  width: 200px;
+  height: 46px;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(180deg, #ffdc83 0%, #fbd26a 25%, #c17024 84.9%, #e3a548 100%);
+  font-size: 16px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 60px;
+  transition: filter 0.3s linear;
+}
+.gallery__btn:hover {
+  filter: brightness(80%);
+}
+.gallery__btn::after {
+  content: url(../../../img/services/arrow.svg);
+  margin-left: 22px;
+}
+
+.guarantys {
+  background: url(../../../img/guarantys/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 81px 0;
+}
+.guarantys__inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.guarantys__title {
+  text-align: center;
+  margin-bottom: 63px;
+}
+.guarantys__title span {
+  font-weight: 700;
+}
+.guarantys__supervisor {
+  position: relative;
+}
+.guarantys__supervisor-text {
+  position: absolute;
+  bottom: 0;
+  padding: 0 23px 26px 29px;
+  font-size: 18px;
+  line-height: 27px;
+}
+.guarantys__supervisor-text span {
+  font-weight: 700;
+}
+.guarantys__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.guarantys__info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.guarantys__info-text {
+  max-width: 302px;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgb(0, 0, 0);
+}
+.guarantys__info-text span {
+  font-weight: 700;
+}
+
+.achievements {
+  background: rgb(29, 26, 20);
+}
+.achievements__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 0;
+  margin-bottom: 400px;
+}
+.achievements__block {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.achievements__icon {
+  font-size: 64px;
+  font-weight: 700;
+  color: rgb(221, 160, 70);
+}
+.achievements__title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.achievements__title span {
   font-weight: 700;
 }
 
@@ -802,5 +955,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  background: rgb(244, 244, 244);
   color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */

@@ -8,10 +8,14 @@
 @import './components/main/services';
 @import './components/main/calculation';
 @import './components/main/advantages';
+@import './components/main/gallery';
+@import './components/main/guarantys';
+@import './components/main/achievements';
 
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    background: rgba(244, 244, 244, 1);
     color: $white;
 }
