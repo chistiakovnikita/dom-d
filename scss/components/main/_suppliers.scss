@@ -1,0 +1,37 @@
+.suppliers {
+    background: rgba(255, 255, 255, 1);
+    padding: 93px 0 115px 0;
+
+    &__title {
+        text-align: center;
+        margin: 0 0 97px 0;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__container {
+        max-width: 1300px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__inner {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    // &__arrow-left {
+    //     position: absolute;
+    //     top: 25px;
+    //     left: 0;
+    // }
+
+    // &__arrow-right {
+    //     position: absolute;
+    //     top: 25px;
+    //     right: 0;
+    // }
+}
