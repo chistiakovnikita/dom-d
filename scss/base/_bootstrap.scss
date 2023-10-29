@@ -1,0 +1,51 @@
+.offcanvas {
+    &__list {
+        padding: 50px 0 0 50px;
+    }
+
+    &__list-inner {
+        padding: 0 0 30px 20px;
+    }
+
+    &__list-inner-item {
+        margin-bottom: 10px;
+    }
+
+    &__list-inner-link {
+        font-size: 20px;
+        line-height: 23px;
+        color: #615f5f;
+        transition: color 0.3s linear;
+
+        &:hover {
+            color: $main;
+        }
+    }
+
+    &__item {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: $black;
+    }
+
+    &__link {
+        font-size: 20px;
+        font-weight: 600;
+        color: $black;
+        transform: scale(1);
+
+        &:hover {
+            color: rgb(109, 109, 109);
+        }
+    }
+
+    &__btn {
+        width: 50px;
+    }
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: right;
+}

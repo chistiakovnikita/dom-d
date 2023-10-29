@@ -6,6 +6,12 @@
     padding: 0 15px;
 }
 
+.logo {
+    @media screen and (max-width: 500px) {
+        width: 127px;
+    }
+}
+
 .title {
     font-family: Roboto;
     font-size: 48px;

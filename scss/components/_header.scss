@@ -1,5 +1,6 @@
 .header {
     background-color: $black;
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -17,6 +18,16 @@
             span {
                 color: $main;
             }
+        }
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__socials {
+        @media screen and (max-width: 768px) {
+            display: none;
         }
     }
 
@@ -38,6 +49,12 @@
         padding-left: 10px;
         transition: filter 0.3s linear;
 
+        @media screen and (max-width: 800px) {
+            width: 100px;
+            text-align: right;
+            padding: 0 10px;
+        }
+
         &:hover {
             filter: $hover;
         }
@@ -58,6 +75,12 @@
         background: rgba(255, 255, 255, 0.22);
         padding-left: 37px;
         transition: filter 0.3s linear;
+
+        @media screen and (max-width: 800px) {
+            width: 130px;
+            text-align: right;
+            padding: 0 10px;
+        }
 
         &:hover {
             filter: $hover;
@@ -82,6 +105,10 @@
         display: flex;
         align-items: center;
         gap: 5px;
+
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
     }
 
     &__phone-number {
@@ -94,6 +121,7 @@
 
         &:hover {
             filter: $hover;
+            color: $white;
         }
     }
 
@@ -114,6 +142,10 @@
         &:hover {
             filter: $hover;
         }
+
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
     }
 
     &__content {
@@ -123,12 +155,23 @@
         background-position: center;
         padding-bottom: 90px;
         margin-bottom: 90px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 35px;
+        }
     }
 
     &__content-inner {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
     }
 
     &__subtitle {
@@ -137,6 +180,10 @@
         font-weight: 400;
         line-height: 28px;
         margin-bottom: 25px;
+
+        @media screen and (max-width: 768px) {
+            line-height: 30px;
+        }
     }
 
     &__services {
@@ -159,6 +206,16 @@
             font-weight: 700;
             line-height: 49px;
             color: $white;
+
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 35px;
+            line-height: 40px;
         }
     }
 
@@ -166,6 +223,10 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+
+        @media screen and (max-width: 570px) {
+            justify-content: center;
+        }
     }
 
     &__service-item {
@@ -182,6 +243,11 @@
         text-align: center;
         cursor: pointer;
         transition: background 0.3s linear;
+
+        @media screen and (max-width: 390px) {
+            max-width: 120px;
+            flex-wrap: nowrap;
+        }
 
         &:hover {
             background: $main;
@@ -200,6 +266,10 @@
 
         img {
             margin-bottom: 20px;
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
         }
     }
 

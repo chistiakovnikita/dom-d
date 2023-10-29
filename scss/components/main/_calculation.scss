@@ -20,11 +20,20 @@
         margin-bottom: 130px;
         padding: 60px 90px 62px 90px;
 
+        @media screen and (max-width: 1024px) {
+            justify-content: space-between;
+            padding: 60px 15px 62px 15px;
+        }
+
         &:after {
             position: absolute;
             content: url(../../../img/calculation/image3.png);
             top: 0;
             right: 0;
+
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
         }
 
         &__info {

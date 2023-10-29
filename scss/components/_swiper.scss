@@ -1,0 +1,23 @@
+.services {
+    &__swiper {
+        display: none;
+        max-width: 340px;
+        height: 470px;
+        background-color: rgba(244, 244, 244, 1);
+
+        @media screen and (max-width: 500px) {
+            display: block;
+        }
+    }
+
+    &__swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: $main;
+    }
+}

@@ -3,6 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
         <link rel="stylesheet" href="./css/main.css" />
         <title>DOM-D</title>
     </head>
@@ -10,14 +20,20 @@
         <header class="header">
             <div class="container">
                 <div class="header__top">
-                    <button class="header__hamburger">
+                    <button
+                        class="header__hamburger"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample"
+                    >
                         <img src="./img/header/hamburger.svg" alt="icon" />
                     </button>
-                    <div class="logo">
-                        <img src="./img/logo.svg" alt="icon" />
+                    <div>
+                        <img class="logo" src="./img/logo.svg" alt="icon" />
                     </div>
                     <p class="header__guarantee">
-                        Строительство деревянных <br />
+                        Строительство деревянных домов<br />
                         <span>за <span>45</span> дней</span>
                     </p>
                     <div class="header__socials">
@@ -61,19 +77,20 @@
                             <div class="header__services-block">
                                 <div class="header__service-item">Демонтаж</div>
                                 <div class="header__service-item">
-                                    Бетонные работы
+                                    Бетонные <br />
+                                    работы
                                 </div>
                                 <div class="header__service-item">
-                                    Возведение стен
+                                    Возведение <br />стен
                                 </div>
                                 <div class="header__service-item">
-                                    Кровельные работы
+                                    Кровельные <br />работы
                                 </div>
                                 <div class="header__service-item">
-                                    Отделка фасадов
+                                    Отделка <br />фасадов
                                 </div>
                                 <div class="header__service-item">
-                                    Инженерные работы
+                                    Инженерные <br />работы
                                 </div>
                             </div>
                         </div>
@@ -95,6 +112,71 @@
                 </div>
             </div>
         </header>
+        <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+        >
+            <div class="offcanvas-header">
+                <button
+                    type="button"
+                    class="offcanvas__btn"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                >
+                    <img src="./img/header/close.svg" alt="icon" />
+                </button>
+            </div>
+            <ul class="offcanvas__list">
+                <li class="offcanvas__item">Виды строительства</li>
+                <ul class="offcanvas__list-inner">
+                    <li class="offcanvas__list-inner-item">
+                        <a class="offcanvas__list-inner-link" href="/"
+                            >- Каркасные дома</a
+                        >
+                    </li>
+                    <li class="offcanvas__list-inner-item">
+                        <a class="offcanvas__list-inner-link" href="/"
+                            >- Дома из клеёного бруса
+                        </a>
+                    </li>
+
+                    <li class="offcanvas__list-inner-item">
+                        <a class="offcanvas__list-inner-link" href="/">
+                            - Фахверковые дома</a
+                        >
+                    </li>
+                    <li class="offcanvas__list-inner-item">
+                        <a class="offcanvas__list-inner-link" href="/"
+                            >- Дома из брёвен</a
+                        >
+                    </li>
+                    <li class="offcanvas__list-inner-item">
+                        <a class="offcanvas__list-inner-link" href="/">
+                            - Беседки</a
+                        >
+                    </li>
+                    <li class="offcanvas__list-inner-item">
+                        <a class="offcanvas__list-inner-link" href="/">
+                            - Ремонт и отделка</a
+                        >
+                    </li>
+                </ul>
+                <li class="offcanvas__item">
+                    <a class="offcanvas__link" href="#">Наши работы</a>
+                </li>
+                <li class="offcanvas__item">
+                    <a class="offcanvas__link" href="#">Отзывы клиентов</a>
+                </li>
+                <li class="offcanvas__item">
+                    <a class="offcanvas__link" href="#">Партнеры</a>
+                </li>
+                <li class="offcanvas__item">
+                    <a class="offcanvas__link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
         <main>
             <section class="services">
                 <div class="container">
@@ -177,6 +259,99 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper services__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide services__swiper-slide">
+                            <div class="services-card">
+                                <h3 class="services-card__title">
+                                    Каркасные дома
+                                </h3>
+                                <button class="services-card__btn">
+                                    Подробнее
+                                </button>
+                                <img
+                                    class="services-card__img"
+                                    src="./img/services/image1.png"
+                                    alt="image"
+                                />
+                            </div>
+                        </div>
+                        <div class="swiper-slide services__swiper-slide">
+                            <div class="services-card">
+                                <h3 class="services-card__title">
+                                    Дома из клеёного бруса
+                                </h3>
+                                <button class="services-card__btn">
+                                    Подробнее
+                                </button>
+                                <img
+                                    class="services-card__img"
+                                    src="./img/services/image2.png"
+                                    alt="image"
+                                />
+                            </div>
+                        </div>
+                        <div class="swiper-slide services__swiper-slide">
+                            <div class="services-card">
+                                <h3 class="services-card__title">
+                                    Дома из брёвен
+                                </h3>
+                                <button class="services-card__btn">
+                                    Подробнее
+                                </button>
+                                <img
+                                    class="services-card__img"
+                                    src="./img/services/image3.png"
+                                    alt="image"
+                                />
+                            </div>
+                        </div>
+                        <div class="swiper-slide services__swiper-slide">
+                            <div class="services-card">
+                                <h3 class="services-card__title">
+                                    Фахверковые дома
+                                </h3>
+                                <button class="services-card__btn">
+                                    Подробнее
+                                </button>
+                                <img
+                                    class="services-card__img"
+                                    src="./img/services/image4.png"
+                                    alt="image"
+                                />
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="services-card services__swiper-slide">
+                                <h3 class="services-card__title">Беседки</h3>
+                                <button class="services-card__btn">
+                                    Подробнее
+                                </button>
+                                <img
+                                    class="services-card__img"
+                                    src="./img/services/image5.png"
+                                    alt="image"
+                                />
+                            </div>
+                        </div>
+                        <div class="swiper-slide services__swiper-slide">
+                            <div class="services-card">
+                                <h3 class="services-card__title">
+                                    Ремонт и отделка
+                                </h3>
+                                <button class="services-card__btn">
+                                    Подробнее
+                                </button>
+                                <img
+                                    class="services-card__img"
+                                    src="./img/services/image6.png"
+                                    alt="image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
             <section class="calculation">
                 <div class="container">
@@ -187,7 +362,7 @@
                     <div class="calculation-content">
                         <div class="calculation-content__info">
                             <h3 class="calculation-content__title">
-                                Cтроительство дома, <br />не покажешь картинкой
+                                Cтроительство дома,не покажешь картинкой
                             </h3>
                             <h4 class="calculation-content__subtitle">
                                 За каждым домом стоит целая история, смотри
@@ -212,7 +387,7 @@
                     </div>
                 </div>
             </section>
-            <section class="advantages">
+            <!-- <section class="advantages">
                 <div class="container">
                     <h1 class="advantages__title title">
                         Заботимся о Вашем <span>спокойствии</span>
@@ -315,8 +490,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="gallery">
+            </section> -->
+            <!-- <section class="gallery">
                 <h1 class="gallery__title title">
                     <span>Посмотрите на готовые дома</span> с комплексом <br />
                     отделки и прокладки коммуникаций.
@@ -354,8 +529,8 @@
                     />
                 </div>
                 <button class="gallery__btn">Смотреть все</button>
-            </section>
-            <section class="guarantys">
+            </section> -->
+            <!-- <section class="guarantys">
                 <div class="container">
                     <h1 class="guarantys__title title">
                         Готовы <span>начать строить дом <br /></span>с надежной
@@ -446,8 +621,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="achievements">
+            </section> -->
+            <!-- <section class="achievements">
                 <div class="container">
                     <div class="achievements__inner">
                         <div class="achievements__block">
@@ -481,8 +656,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="suppliers">
+            </section> -->
+            <!-- <section class="suppliers">
                 <div class="suppliers__container">
                     <h1 class="suppliers__title title">
                         Используем только
@@ -525,8 +700,8 @@
                         />
                     </div>
                 </div>
-            </section>
-            <section class="contacts">
+            </section> -->
+            <!-- <section class="contacts">
                 <div class="container">
                     <h1 class="contacts__title title">Наши контакты</h1>
                     <div class="contacts__inner">
@@ -606,9 +781,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </main>
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="logo">
@@ -700,6 +875,13 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </body>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
 </html>

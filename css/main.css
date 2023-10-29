@@ -1,5 +1,68 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+.offcanvas__list {
+  padding: 50px 0 0 50px;
+}
+.offcanvas__list-inner {
+  padding: 0 0 30px 20px;
+}
+.offcanvas__list-inner-item {
+  margin-bottom: 10px;
+}
+.offcanvas__list-inner-link {
+  font-size: 20px;
+  line-height: 23px;
+  color: #615f5f;
+  transition: color 0.3s linear;
+}
+.offcanvas__list-inner-link:hover {
+  color: rgb(221, 160, 70);
+}
+.offcanvas__item {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+}
+.offcanvas__link {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  transform: scale(1);
+}
+.offcanvas__link:hover {
+  color: rgb(109, 109, 109);
+}
+.offcanvas__btn {
+  width: 50px;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: right;
+}
+
+.services__swiper {
+  display: none;
+  max-width: 340px;
+  height: 470px;
+  background-color: rgb(244, 244, 244);
+}
+@media screen and (max-width: 500px) {
+  .services__swiper {
+    display: block;
+  }
+}
+.services__swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.services .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgb(221, 160, 70);
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -220,8 +283,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -464,6 +526,12 @@ template {
   padding: 0 15px;
 }
 
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 127px;
+  }
+}
+
 .title {
   font-family: Roboto;
   font-size: 48px;
@@ -497,6 +565,16 @@ template {
 .header__guarantee span span {
   color: rgb(221, 160, 70);
 }
+@media screen and (max-width: 1024px) {
+  .header__guarantee {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__socials {
+    display: none;
+  }
+}
 .header__socials-text {
   font-family: Roboto;
   font-size: 14px;
@@ -513,6 +591,13 @@ template {
   background: rgba(255, 255, 255, 0.22);
   padding-left: 10px;
   transition: filter 0.3s linear;
+}
+@media screen and (max-width: 800px) {
+  .header__socials-viber {
+    width: 100px;
+    text-align: right;
+    padding: 0 10px;
+  }
 }
 .header__socials-viber:hover {
   filter: brightness(80%);
@@ -531,6 +616,13 @@ template {
   background: rgba(255, 255, 255, 0.22);
   padding-left: 37px;
   transition: filter 0.3s linear;
+}
+@media screen and (max-width: 800px) {
+  .header__socials-telegram {
+    width: 130px;
+    text-align: right;
+    padding: 0 10px;
+  }
 }
 .header__socials-telegram:hover {
   filter: brightness(80%);
@@ -552,6 +644,11 @@ template {
   align-items: center;
   gap: 5px;
 }
+@media screen and (max-width: 500px) {
+  .header__phone-wrapper {
+    display: none;
+  }
+}
 .header__phone-number {
   font-family: Roboto;
   font-size: 18px;
@@ -562,6 +659,7 @@ template {
 }
 .header__phone-number:hover {
   filter: brightness(80%);
+  color: rgb(255, 255, 255);
 }
 .header__phone-btn {
   width: 200px;
@@ -574,6 +672,11 @@ template {
 .header__phone-btn:hover {
   filter: brightness(80%);
 }
+@media screen and (max-width: 500px) {
+  .header__phone-btn {
+    display: none;
+  }
+}
 .header__content {
   background-image: url(../../img/header/bg.jpg);
   background-repeat: no-repeat;
@@ -582,10 +685,23 @@ template {
   padding-bottom: 90px;
   margin-bottom: 90px;
 }
+@media screen and (max-width: 768px) {
+  .header__content {
+    margin-bottom: 35px;
+  }
+}
 .header__content-inner {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .header__content-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 .header__subtitle {
   font-family: Roboto;
@@ -593,6 +709,11 @@ template {
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .header__subtitle {
+    line-height: 30px;
+  }
 }
 .header__services {
   max-width: 593px;
@@ -613,10 +734,27 @@ template {
   line-height: 49px;
   color: rgb(255, 255, 255);
 }
+@media screen and (max-width: 768px) {
+  .header__title .small {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
 .header__services-block {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+@media screen and (max-width: 570px) {
+  .header__services-block {
+    justify-content: center;
+  }
 }
 .header__service-item {
   display: flex;
@@ -633,6 +771,12 @@ template {
   cursor: pointer;
   transition: background 0.3s linear;
 }
+@media screen and (max-width: 390px) {
+  .header__service-item {
+    max-width: 120px;
+    flex-wrap: nowrap;
+  }
+}
 .header__service-item:hover {
   background: rgb(221, 160, 70);
 }
@@ -648,6 +792,11 @@ template {
 }
 .header__calculation img {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .header__calculation img {
+    display: none;
+  }
 }
 .header__calculation-title {
   font-size: 32px;
@@ -683,6 +832,17 @@ template {
   margin-bottom: 130px;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .services__inner {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .services__inner {
+    display: none;
+  }
+}
 .services .services-card {
   width: 100%;
   display: grid;
@@ -691,6 +851,11 @@ template {
   box-shadow: 0px 0px 74px 0px rgba(39, 17, 10, 0.16);
   background: rgba(255, 255, 255, 0.6);
   margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+  .services .services-card {
+    margin-bottom: 0;
+  }
 }
 .services .services-card__title {
   position: relative;
@@ -749,11 +914,22 @@ template {
   margin-bottom: 130px;
   padding: 60px 90px 62px 90px;
 }
+@media screen and (max-width: 1024px) {
+  .calculation .calculation-content {
+    justify-content: space-between;
+    padding: 60px 15px 62px 15px;
+  }
+}
 .calculation .calculation-content:after {
   position: absolute;
   content: url(../../../img/calculation/image3.png);
   top: 0;
   right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .calculation .calculation-content:after {
+    display: none;
+  }
 }
 .calculation .calculation-content__info {
   max-width: 417px;
