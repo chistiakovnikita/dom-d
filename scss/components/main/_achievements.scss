@@ -6,6 +6,40 @@
         justify-content: space-between;
         align-items: center;
         padding: 42px 0;
+        gap: 20px;
+
+        @media screen and (max-width: 915px) {
+            flex-wrap: wrap;
+
+            & > div:last-of-type {
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 687px) {
+            & > div:last-of-type {
+                max-width: 212px;
+            }
+            & > div {
+                max-width: 212px;
+            }
+            justify-content: space-around;
+        }
+
+        @media screen and (max-width: 490px) {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            & > div:last-of-type {
+                max-width: 100%;
+            }
+            & > div {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
     }
 
     &__block {

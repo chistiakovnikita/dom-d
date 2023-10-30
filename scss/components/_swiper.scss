@@ -2,7 +2,7 @@
     &__swiper {
         display: none;
         max-width: 340px;
-        height: 470px;
+        height: 500px;
         background-color: rgba(244, 244, 244, 1);
 
         @media screen and (max-width: 500px) {
@@ -12,6 +12,49 @@
 
     &__swiper-slide {
         display: flex;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: $main;
+    }
+}
+
+.guarantys {
+    &__swiper {
+        display: none;
+        max-width: 500px;
+        height: 240px;
+
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+    }
+
+    &__swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.suppliers {
+    &__swiper {
+        width: 100%;
+        height: 170px;
+    }
+
+    &__swiper-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__swiper-slide {
+        height: 110px;
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
 

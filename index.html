@@ -384,10 +384,15 @@
                                 alt="icon"
                             />
                         </div>
+                        <button
+                            class="calculation-content__btn calculation-content__btn--mobile"
+                        >
+                            Заказать расчет
+                        </button>
                     </div>
                 </div>
             </section>
-            <!-- <section class="advantages">
+            <section class="advantages">
                 <div class="container">
                     <h1 class="advantages__title title">
                         Заботимся о Вашем <span>спокойствии</span>
@@ -417,10 +422,11 @@
                             />
                             <div class="advantages__text">
                                 <h2 class="advantages-card__title">
-                                    Не поднимаем стоимость
+                                    Поэтапная оплата
                                 </h2>
                                 <h3 class="advantages-card__subtitle">
-                                    Фиксируем стоимость работ в договоре
+                                    Оплата каждого вида работ разбита на 2 части
+                                    (50% аванс 50% по завершению)
                                 </h3>
                             </div>
                         </div>
@@ -433,10 +439,10 @@
                             />
                             <div class="advantages__text">
                                 <h2 class="advantages-card__title">
-                                    Не поднимаем стоимость
+                                    Соблюдаем сроки
                                 </h2>
                                 <h3 class="advantages-card__subtitle">
-                                    Фиксируем стоимость работ в договоре
+                                    Несем ответственность за соблюдение сроков
                                 </h3>
                             </div>
                         </div>
@@ -449,10 +455,10 @@
                             />
                             <div class="advantages__text">
                                 <h2 class="advantages-card__title">
-                                    Не поднимаем стоимость
+                                    Экологичность
                                 </h2>
                                 <h3 class="advantages-card__subtitle">
-                                    Фиксируем стоимость работ в договоре
+                                    Дом строится из натуральных материалов
                                 </h3>
                             </div>
                         </div>
@@ -465,10 +471,11 @@
                             />
                             <div class="advantages__text">
                                 <h2 class="advantages-card__title">
-                                    Не поднимаем стоимость
+                                    Самостоятельно
                                 </h2>
                                 <h3 class="advantages-card__subtitle">
-                                    Фиксируем стоимость работ в договоре
+                                    Закупаем и доставляем на объект,
+                                    качественные материалы и расходники
                                 </h3>
                             </div>
                         </div>
@@ -481,17 +488,18 @@
                             />
                             <div class="advantages__text">
                                 <h2 class="advantages-card__title">
-                                    Не поднимаем стоимость
+                                    Проводим уборку
                                 </h2>
                                 <h3 class="advantages-card__subtitle">
-                                    Фиксируем стоимость работ в договоре
+                                    В процессе работ и вывозим мусор после
+                                    завершения работ
                                 </h3>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section> -->
-            <!-- <section class="gallery">
+            </section>
+            <section class="gallery">
                 <h1 class="gallery__title title">
                     <span>Посмотрите на готовые дома</span> с комплексом <br />
                     отделки и прокладки коммуникаций.
@@ -529,8 +537,8 @@
                     />
                 </div>
                 <button class="gallery__btn">Смотреть все</button>
-            </section> -->
-            <!-- <section class="guarantys">
+            </section>
+            <section class="guarantys">
                 <div class="container">
                     <h1 class="guarantys__title title">
                         Готовы <span>начать строить дом <br /></span>с надежной
@@ -539,7 +547,11 @@
 
                     <div class="guarantys__inner">
                         <div class="guarantys__supervisor">
-                            <img src="./img/guarantys/photo.jpg" alt="" />
+                            <img
+                                class="guarantys__img"
+                                src="./img/guarantys/photo.jpg"
+                                alt=""
+                            />
                             <p class="guarantys__supervisor-text">
                                 <span
                                     >Здравствуйте, меня зовут Ярослав Доля</span
@@ -620,9 +632,100 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper guarantys__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide guarantys__swiper-slide">
+                                <div class="guarantys__info-block">
+                                    <img
+                                        src="./img/guarantys/icon.svg"
+                                        alt="icon"
+                                    />
+                                    <p class="guarantys__info-text">
+                                        Мы не просто
+                                        <span>предоставляем </span>услуги мы
+                                        отвечаем за весь комплекс работ от
+                                        проектирования до гарантийного
+                                        обслуживания.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide guarantys__swiper-slide">
+                                <div class="guarantys__info-block">
+                                    <img
+                                        src="./img/guarantys/icon.svg"
+                                        alt="icon"
+                                    />
+                                    <p class="guarantys__info-text">
+                                        Вы не <span>рискуете</span> своими
+                                        деньгами, нервами и временем. Мы берем
+                                        на себя полную материальную
+                                        ответственность по договору за дом,
+                                        работы, сроки выполнения каждого этапа
+                                        работы
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide guarantys__swiper-slide">
+                                <div class="guarantys__info-block">
+                                    <img
+                                        src="./img/guarantys/icon.svg"
+                                        alt="icon"
+                                    />
+                                    <p class="guarantys__info-text">
+                                        Наша команда стремится к полной
+                                        <span>прозрачности</span>
+                                        в работе, поэтому мы с удовольствием
+                                        показываем каждый процесс строительства,
+                                        без прикрас.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide guarantys__swiper-slide">
+                                <div class="guarantys__info-block">
+                                    <img
+                                        src="./img/guarantys/icon.svg"
+                                        alt="icon"
+                                    />
+                                    <p class="guarantys__info-text">
+                                        Мы <span>гарантируем</span> Ваше
+                                        минимальное вовлечение в рутину
+                                        строительства, беря на себя весь
+                                        комплекс строительных работ
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide guarantys__swiper-slide">
+                                <div class="guarantys__info-block">
+                                    <img
+                                        src="./img/guarantys/icon.svg"
+                                        alt="icon"
+                                    />
+                                    <p class="guarantys__info-text">
+                                        Мы <span>знаем все</span> о
+                                        строительстве деревянных домов и
+                                        строительных работах
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide guarantys__swiper-slide">
+                                <div class="guarantys__info-block">
+                                    <img
+                                        src="./img/guarantys/icon.svg"
+                                        alt="icon"
+                                    />
+                                    <p class="guarantys__info-text">
+                                        <span>Проектируем</span> и строим
+                                        авторские дома из дерева и клееного
+                                        бруса
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-            </section> -->
-            <!-- <section class="achievements">
+            </section>
+            <section class="achievements">
                 <div class="container">
                     <div class="achievements__inner">
                         <div class="achievements__block">
@@ -638,7 +741,7 @@
                             </h5>
                         </div>
                         <div class="achievements__block">
-                            <span class="achievements__icon">15</span>
+                            <span class="achievements__icon">53</span>
                             <h5 class="achievements__title">
                                 построенных домов
                             </h5>
@@ -656,8 +759,8 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
-            <!-- <section class="suppliers">
+            </section>
+            <section class="suppliers">
                 <div class="suppliers__container">
                     <h1 class="suppliers__title title">
                         Используем только
@@ -666,41 +769,56 @@
                             и профессиональные материалы</span
                         >
                     </h1>
-                    <div class="suppliers__inner">
-                        <img
-                            class="suppliers__arrow-left"
-                            src="./img/suppliers/left.svg"
-                            alt="icon"
-                        />
-                        <img
-                            class="suppliers__icon"
-                            src="./img/suppliers/icon1.svg"
-                            alt="icon"
-                        />
-                        <img
-                            class="suppliers__icon"
-                            src="./img/suppliers/icon2.svg"
-                            alt="icon"
-                        />
-                        <img
-                            class="suppliers__icon"
-                            src="./img/suppliers/icon3.svg"
-                            alt="icon"
-                        />
-                        <img
-                            class="suppliers__icon"
-                            src="./img/suppliers/icon4.svg"
-                            alt="icon"
-                        />
 
-                        <img
-                            class="suppliers__arrow-right"
-                            src="./img/suppliers/right.svg"
-                            alt="icon"
-                        />
+                    <div class="swiper suppliers__swiper">
+                        <div class="swiper-wrapper suppliers__swiper-wrapper">
+                            <div class="swiper-slide suppliers__swiper-slide">
+                                <img
+                                    class="suppliers__icon"
+                                    src="./img/suppliers/icon1.svg"
+                                    alt="icon"
+                                />
+                            </div>
+                            <div class="swiper-slide suppliers__swiper-slide">
+                                <img
+                                    class="suppliers__icon"
+                                    src="./img/suppliers/icon2.svg"
+                                    alt="icon"
+                                />
+                            </div>
+                            <div class="swiper-slide suppliers__swiper-slide">
+                                <img
+                                    class="suppliers__icon"
+                                    src="./img/suppliers/icon3.svg"
+                                    alt="icon"
+                                />
+                            </div>
+                            <div class="swiper-slide suppliers__swiper-slide">
+                                <img
+                                    class="suppliers__icon"
+                                    src="./img/suppliers/icon4.svg"
+                                    alt="icon"
+                                />
+                            </div>
+                            <div class="swiper-slide suppliers__swiper-slide">
+                                <img
+                                    class="suppliers__icon"
+                                    src="./img/suppliers/icon3.svg"
+                                    alt="icon"
+                                />
+                            </div>
+                            <div class="swiper-slide suppliers__swiper-slide">
+                                <img
+                                    class="suppliers__icon"
+                                    src="./img/suppliers/icon2.svg"
+                                    alt="icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <!-- <section class="contacts">
                 <div class="container">
                     <h1 class="contacts__title title">Наши контакты</h1>

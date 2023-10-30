@@ -23,6 +23,15 @@
         @media screen and (max-width: 1024px) {
             justify-content: space-between;
             padding: 60px 15px 62px 15px;
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 35px;
         }
 
         &:after {
@@ -38,6 +47,11 @@
 
         &__info {
             max-width: 417px;
+
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+                text-align: center;
+            }
         }
 
         &__title {
@@ -46,12 +60,26 @@
             color: $main;
             margin-bottom: 19px;
             line-height: 50px;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 25px;
+                line-height: 35px;
+            }
         }
 
         &__subtitle {
             font-size: 24px;
             margin-bottom: 81px;
             line-height: 33px;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 35px;
+            }
         }
 
         &__btn {
@@ -66,8 +94,28 @@
             );
             transition: filter 0.3s linear;
 
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+
+            &--mobile {
+                display: none;
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                }
+            }
+
             &:hover {
                 filter: $hover;
+            }
+        }
+
+        &__img {
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
             }
         }
 

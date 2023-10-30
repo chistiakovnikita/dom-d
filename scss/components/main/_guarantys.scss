@@ -3,12 +3,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 81px 0;
+
     &__inner {
         display: flex;
         align-items: center;
+        gap: 34px;
 
-        gap: 20px;
+        @media screen and (max-width: 1085px) {
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
     }
+
     &__title {
         text-align: center;
         margin-bottom: 63px;
@@ -21,6 +30,12 @@
         position: relative;
     }
 
+    &__img {
+        @media screen and (max-width: 1085px) {
+            display: none;
+        }
+    }
+
     &__supervisor-text {
         position: absolute;
         bottom: 0;
@@ -28,26 +43,40 @@
         font-size: 18px;
         line-height: 27px;
 
+        @media screen and (max-width: 1085px) {
+            display: none;
+        }
+
         span {
             font-weight: 700;
         }
     }
 
     &__info {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 35px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 35px;
     }
     &__info-block {
+        max-width: 303px;
         display: flex;
         align-items: flex-start;
         gap: 8px;
+
+        @media screen and (max-width: 1085px) {
+            max-width: 100%;
+        }
     }
     &__info-text {
         max-width: 302px;
         font-size: 18px;
         line-height: 27px;
         color: $black;
+
+        @media screen and (max-width: 600px) {
+            max-width: 100%;
+        }
 
         span {
             font-weight: 700;

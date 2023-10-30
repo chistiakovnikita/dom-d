@@ -2,6 +2,10 @@
     background: rgba(255, 255, 255, 1);
     padding: 93px 0 115px 0;
 
+    @media screen and (max-width: 490px) {
+        padding: 35px 0;
+    }
+
     &__title {
         text-align: center;
         margin: 0 0 97px 0;
@@ -16,22 +20,4 @@
         padding: 0 15px;
         margin: 0 auto;
     }
-
-    &__inner {
-        position: relative;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    // &__arrow-left {
-    //     position: absolute;
-    //     top: 25px;
-    //     left: 0;
-    // }
-
-    // &__arrow-right {
-    //     position: absolute;
-    //     top: 25px;
-    //     right: 0;
-    // }
 }
