@@ -5,6 +5,25 @@
         padding: 70px 0;
         display: flex;
         justify-content: space-between;
+        gap: 10px;
+
+        & > div {
+            max-width: 33.33%;
+        }
+
+        @media screen and (max-width: 980px) {
+            & > div {
+                max-width: inherit;
+            }
+
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        @media screen and (max-width: 585px) {
+            justify-content: start;
+        }
     }
 
     &__subtitle {
@@ -32,7 +51,15 @@
 
     &__links {
         li {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
+        }
+
+        @media screen and (max-width: 853px) {
+            order: 2;
+        }
+
+        @media screen and (max-width: 585px) {
+            order: 0;
         }
     }
 
