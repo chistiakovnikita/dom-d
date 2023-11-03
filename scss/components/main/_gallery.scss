@@ -7,6 +7,11 @@
         span {
             font-weight: 700;
         }
+
+        @media screen and (max-width: 650px) {
+            margin-bottom: 25px;
+            line-height: 30px;
+        }
     }
 
     &__inner {
@@ -23,6 +28,10 @@
 
         @media screen and (max-width: 500px) {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 650px) {
+            margin-bottom: 15px;
         }
     }
 
@@ -56,6 +65,10 @@
         &::after {
             content: url(../../../img/services/arrow.svg);
             margin-left: 22px;
+        }
+
+        @media screen and (max-width: 650px) {
+            margin-bottom: 15px;
         }
     }
 }

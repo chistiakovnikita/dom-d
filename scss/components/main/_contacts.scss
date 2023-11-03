@@ -40,6 +40,14 @@
             font-weight: 900;
             margin-bottom: 29px;
             color: $black;
+
+            @media screen and (max-width: 845px) {
+                font-size: 25px;
+            }
+
+            @media screen and (max-width: 650px) {
+                font-size: 20px;
+            }
         }
 
         &__subtitle {
@@ -131,6 +139,10 @@
 
             @media screen and (max-width: 1024px) {
                 font-size: 25px;
+            }
+
+            @media screen and (max-width: 375px) {
+                font-size: 20px;
             }
         }
 

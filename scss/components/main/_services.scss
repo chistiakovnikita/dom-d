@@ -6,6 +6,10 @@
         span {
             font-weight: 700;
         }
+
+        @media screen and (max-width: 650px) {
+            line-height: 30px;
+        }
     }
 
     &__inner {
@@ -52,6 +56,10 @@
                 position: absolute;
                 top: 0;
                 right: 7px;
+            }
+
+            @media screen and (max-width: 425px) {
+                font-size: 22px;
             }
         }
 

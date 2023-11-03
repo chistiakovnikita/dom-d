@@ -66,11 +66,16 @@
 .guarantys__swiper {
   display: none;
   max-width: 500px;
-  height: 240px;
+  height: 145px;
 }
 @media screen and (max-width: 600px) {
   .guarantys__swiper {
     display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .guarantys__swiper {
+    height: 230px;
   }
 }
 .guarantys__swiper-slide {
@@ -573,6 +578,16 @@ template {
   font-size: 48px;
   color: rgb(0, 0, 0);
 }
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .title {
+    font-size: 25px;
+  }
+}
 
 .text {
   font-family: Roboto;
@@ -733,6 +748,8 @@ template {
 }
 @media screen and (max-width: 768px) {
   .header__content-inner {
+    max-width: 520px;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -749,6 +766,12 @@ template {
 @media screen and (max-width: 768px) {
   .header__subtitle {
     line-height: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__subtitle {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 .header__services {
@@ -776,10 +799,22 @@ template {
     line-height: 30px;
   }
 }
+@media screen and (max-width: 425px) {
+  .header__title .small {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__title {
     font-size: 35px;
     line-height: 40px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__title {
+    font-size: 25px;
+    line-height: 25px;
   }
 }
 .header__services-block {
@@ -840,6 +875,11 @@ template {
   color: rgb(0, 0, 0);
   margin-bottom: 15px;
 }
+@media screen and (max-width: 650px) {
+  .header__calculation-title {
+    font-size: 22px;
+  }
+}
 .header__calculation-subtitle {
   font-size: 18px;
   color: rgb(0, 0, 0);
@@ -861,6 +901,11 @@ template {
 }
 .services__title span {
   font-weight: 700;
+}
+@media screen and (max-width: 650px) {
+  .services__title {
+    line-height: 30px;
+  }
 }
 .services__inner {
   display: grid;
@@ -909,6 +954,11 @@ template {
   top: 0;
   right: 7px;
 }
+@media screen and (max-width: 425px) {
+  .services .services-card__title {
+    font-size: 22px;
+  }
+}
 .services .services-card__btn {
   max-width: 200px;
   height: 46px;
@@ -942,6 +992,12 @@ template {
   margin-bottom: 55px;
   color: rgb(0, 0, 0);
 }
+@media screen and (max-width: 650px) {
+  .calculation__subtitle {
+    font-size: 23px;
+    margin-bottom: 35px;
+  }
+}
 .calculation .calculation-content {
   position: relative;
   display: flex;
@@ -964,6 +1020,11 @@ template {
     justify-content: center;
     align-items: center;
     margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .calculation .calculation-content {
+    padding: 15px 25px 17px 25px;
   }
 }
 .calculation .calculation-content:after {
@@ -1063,6 +1124,11 @@ template {
 .advantages__title span {
   font-weight: 700;
 }
+@media screen and (max-width: 650px) {
+  .advantages__title {
+    margin-bottom: 30px;
+  }
+}
 .advantages__inner {
   margin-bottom: 143px;
   display: grid;
@@ -1143,6 +1209,12 @@ template {
 .gallery__title span {
   font-weight: 700;
 }
+@media screen and (max-width: 650px) {
+  .gallery__title {
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+}
 .gallery__inner {
   max-width: 1370px;
   margin: 0 auto;
@@ -1159,6 +1231,11 @@ template {
 @media screen and (max-width: 500px) {
   .gallery__inner {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+  .gallery__inner {
+    margin-bottom: 15px;
   }
 }
 .gallery__img {
@@ -1184,12 +1261,22 @@ template {
   content: url(../../../img/services/arrow.svg);
   margin-left: 22px;
 }
+@media screen and (max-width: 650px) {
+  .gallery__btn {
+    margin-bottom: 15px;
+  }
+}
 
 .guarantys {
   background: url(../../../img/guarantys/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 81px 0;
+}
+@media screen and (max-width: 768px) {
+  .guarantys {
+    padding: 35px 0;
+  }
 }
 .guarantys__inner {
   display: flex;
@@ -1212,6 +1299,11 @@ template {
 }
 .guarantys__title span {
   font-weight: 700;
+}
+@media screen and (max-width: 650px) {
+  .guarantys__title {
+    margin-bottom: 25px;
+  }
 }
 .guarantys__supervisor {
   position: relative;
@@ -1345,6 +1437,11 @@ template {
   text-align: center;
   margin: 0 0 97px 0;
 }
+@media screen and (max-width: 768px) {
+  .suppliers__title {
+    margin: 0 0 20px 0;
+  }
+}
 .suppliers__title span {
   font-weight: 700;
 }
@@ -1397,6 +1494,16 @@ template {
   font-weight: 900;
   margin-bottom: 29px;
   color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 845px) {
+  .contacts .contacts-info__title {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contacts .contacts-info__title {
+    font-size: 20px;
+  }
 }
 .contacts .contacts-info__subtitle {
   font-size: 20px;
@@ -1475,6 +1582,11 @@ template {
 @media screen and (max-width: 1024px) {
   .contacts .contacts-info__phone-number {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contacts .contacts-info__phone-number {
+    font-size: 20px;
   }
 }
 .contacts .contacts-info__btn {
